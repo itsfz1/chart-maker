@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 16px;
+  margin: 1rem;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.gap {
+  gap: 0.5rem;
+}
+
+.form {
+  margin-top: 2rem;
+  background: #333333;
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);
+  background: linear-gradient(to right, #dd1818, #333333);
+  padding: 2rem;
+}
+
+.user-input {
+  position: relative;
+}
+
+.type-text {
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.type-text ~ .focus-border:before,
+.type-text ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+.type-text ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+.type-text ~ .focus-border i:before,
+.type-text ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+.type-text ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.type-text:focus ~ .focus-border:before,
+.type-text:focus ~ .focus-border:after {
+  width: 100%;
+  transition: 0.3s;
+}
+.type-text:focus ~ .focus-border i:before,
+.type-text:focus ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+#theme {
+  cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.data-submit {
+  cursor: pointer;
+  width: calc(50% - 0.5rem);
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  outline: none;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: calc(50% - 0.5rem / 2);
   }
 }
