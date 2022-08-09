@@ -4,4 +4,4 @@ Are you looking for to generate different types of charts based on your input da
 
 **Note:** More charts to be added
 
-###License: Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA)
+### License: Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA)
