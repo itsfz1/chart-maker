@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chart-maker/static/css/main.3d7a4cef.css",
+    "main.js": "/chart-maker/static/js/main.9d3e969e.js",
+    "static/js/787.1f1d0d48.chunk.js": "/chart-maker/static/js/787.1f1d0d48.chunk.js",
+    "index.html": "/chart-maker/index.html",
+    "main.3d7a4cef.css.map": "/chart-maker/static/css/main.3d7a4cef.css.map",
+    "main.9d3e969e.js.map": "/chart-maker/static/js/main.9d3e969e.js.map",
+    "787.1f1d0d48.chunk.js.map": "/chart-maker/static/js/787.1f1d0d48.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d7a4cef.css",
+    "static/js/main.9d3e969e.js"
+  ]
+}
