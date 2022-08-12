@@ -1,3 +1,5 @@
+import ReactApexChart from "react-apexcharts"
+
 /**
  * Line Chart
  * @param {Array} data - Array of data points, y-axis
@@ -5,8 +7,6 @@
  * @param {string} title - Title of the chart, string
  * @param {string} theme - Theme of the chart, string
  */
-
-import ReactApexChart from "react-apexcharts"
 
 const Linechart = ({
   data = [10, 41, 35, 51, 49, 62, 69, 91, 148],
